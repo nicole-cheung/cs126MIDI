@@ -2,7 +2,14 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-
+    backgroundColor = 0;
+    showingInstructions = true;
+    midiIn.openPort(0);
+    midiIn.addListener(this);
+    
+    for (int i = 0; i < kMaxNotes; i++) {
+        notes[i].time_counter = 0;
+    }
 }
 
 //--------------------------------------------------------------
