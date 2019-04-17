@@ -2,7 +2,6 @@
 
 #include "ofMain.h"
 #include "ofxMidi.h"
-const int kMaxNotes = 1000;
 
 class ofApp :
 
@@ -11,15 +10,15 @@ public ofxMidiListener {
     
     struct Note {
         ofPoint pos;
-        int time_counter;
-        int note_num;
-        int note_vel;
+        int time_counter = 0;
+        int pitch;
+        int velocity;
     };
     
-    Note notes[kMaxNotes];
-    int backgroundColor;
-    ofxMidiIn midiIn;
-    bool showingInstructions;
+    Note notes[1000];
+    int background_color;
+    ofxMidiIn midi_in;
+    bool showing_instructions;
 
     public:
     
