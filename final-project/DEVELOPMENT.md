@@ -11,3 +11,5 @@
 * Fiddled with setup() to get initial app going
 * Most of my time was spent trying to interpret documentation in the ofxMidi files
 * Wrote new message function to receive new note inputs - here, I decided to begin with a non-significant but still visually responsive circular display 
+* ofGraphics has some useful methods to set color and transparency of the shapes
+* Development is very slow at this point because it takes so much time to search through all the available libraries. Next week I will probably give extra time to going through the oF forum instead of just searching the libraries
