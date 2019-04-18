@@ -21,6 +21,12 @@ void ofApp::update() {
 void ofApp::draw() {
     ofBackgroundGradient(0, background_color);
     
+    if (showing_instructions) {
+        //display text
+        //get and display MIDI inputs
+        //display if there are no current inputs
+    }
+    
     for (int i = 0; i < kMaxNotes; i++) {
         if (notes[i].time_counter > 0) {
             
@@ -34,13 +40,16 @@ void ofApp::draw() {
             //draws the circle at the randomly generated position
             //TODO: fiddle with value of velocity to get smooth images
             ofDrawCircle(notes[i].pos, notes[i].velocity);
+            
+            notes[i].time_counter--;
         }
     }
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key) {
-
+    //toggle instructions
+    //set preferred MIDI input
 }
 
 //--------------------------------------------------------------
