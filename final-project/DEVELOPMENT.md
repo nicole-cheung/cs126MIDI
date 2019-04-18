@@ -12,4 +12,4 @@
 * Wrote new message function to receive new note inputs - here, I decided to begin with a non-significant but still visually responsive circular display 
 * ofGraphics has some useful methods to set color and transparency of the shapes
 * Development is very slow at this point because it takes so much time to search through all the available libraries. Next week I will probably give extra time to going through the oF forum instead of just searching the libraries. I will also have to figure out how to toggle between the circular display and a future line display
-* ofxMidi only takes in raw MIDI data - aka either the keyboard keys or piano. I will have to mess with Garageband and opening virtual ports in ofxMidiIn to feed in an existing MIDI file.
+* ofxMidi only takes in raw MIDI data - aka either the keyboard keys or piano. I will have to mess with Garageband and opening virtual ports in ofxMidiIn to feed in an existing MIDI file. (http://fox-gieg.com/tutorials/2007/inter-application-midi/) OR (https://forum.openframeworks.cc/t/importing-midi-file-to-be-used-as-visual-or-math-information/7381)
