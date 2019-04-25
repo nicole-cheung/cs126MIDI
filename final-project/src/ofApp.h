@@ -15,7 +15,7 @@ public ofxMidiListener {
         int velocity;
     };
     
-    Note notes[1000];
+    Note notes[1000]; //declare constant
     int background_color;
     ofxMidiIn midi_in;
     bool showing_instructions;
