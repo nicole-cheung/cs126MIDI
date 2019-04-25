@@ -18,3 +18,5 @@
 * Went hunting for a program that lets me pass MIDI data through two different applications. Found possible solution: MIDI patchbay http://notahat.com/midi_patchbay/
 * Another solution is Audio MIDI Setup, but is only on Mac
 * Creating a display for instructions is kind of nitpicky work with lots of pixel numbers that I'm not sure whether I can just keep as magic numbers or not. Very little consistency as I am still playing with design choices.
+* ofDrawBitmapString creates easily readable instructions
+* set up key press function to toggle out of instructions

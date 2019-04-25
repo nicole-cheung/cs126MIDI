@@ -7,6 +7,7 @@ class ofApp :
 
 public ofBaseApp,
 public ofxMidiListener {
+    const static int kMaxNotes = 1000;
     
     struct Note {
         ofPoint pos;
@@ -15,7 +16,7 @@ public ofxMidiListener {
         int velocity;
     };
     
-    Note notes[1000]; //declare constant
+    Note notes[kMaxNotes]; //declare constant
     int background_color;
     ofxMidiIn midi_in;
     bool showing_instructions;

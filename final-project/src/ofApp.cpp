@@ -1,7 +1,7 @@
 #include "ofApp.h"
 
 const int kMaxNotes = 1000;
-//--------------------------------------------------------------
+
 void ofApp::setup() {
     ofSetVerticalSync(true);
     ofSetLogLevel(OF_LOG_VERBOSE);
@@ -11,20 +11,14 @@ void ofApp::setup() {
     showing_instructions = true;
     
     //openPort will let the program look for the first MIDI input that the computer can recognize, openVirtualPort will let another program interact with the code as if it was a keyboard
-    //midi_in.openPort(0);
-    bool openVirtualPort(std::string portName="ofxMidi Virtual Input");
+    midi_in.openPort(0);
     midi_in.addListener(this);
     
     for (int i = 0; i < kMaxNotes; i++) {
         notes[i].time_counter = 0;
-    }}
-
-//--------------------------------------------------------------
-void ofApp::update() {
-
+    }
 }
 
-//--------------------------------------------------------------
 void ofApp::draw() {
     ofBackgroundGradient(0, background_color);
     
@@ -54,10 +48,11 @@ void ofApp::draw() {
             ofDrawBitmapString("NOT CONNECTED", 10, last_line_pos + 50);
         
         ofDrawBitmapString("Press 0-9 on the keyboard to set the connected port number.", 10, last_line_pos + 100);
-        ofDrawBitmapString("Press lowercase 's' on the keyboard to show/hide this text.", 10, last_line_pos + 120);
+        ofDrawBitmapString("Press lowercase 'i' on the keyboard to show/hide this text.", 10, last_line_pos + 120);
         }
     }
     
+    //Displays note graphics
     for (int i = 0; i < kMaxNotes; i++) {
         if (notes[i].time_counter > 0) {
             
@@ -77,60 +72,18 @@ void ofApp::draw() {
     }
 }
 
-//--------------------------------------------------------------
 void ofApp::keyPressed(int key) {
     //toggle instructions
-    //set preferred MIDI input
-}
-
-//--------------------------------------------------------------
-void ofApp::keyReleased(int key) {
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y ) {
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button) {
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mousePressed(int x, int y, int button) {
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button) {
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseEntered(int x, int y) {
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseExited(int x, int y) {
-
-}
-
-//--------------------------------------------------------------
-void ofApp::windowResized(int w, int h) {
-
-}
-
-//--------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg) {
-
-}
-
-//--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo) {
-
+    if (key == 'i') {
+        showing_instructions = !showing_instructions;
+        
+        //toggles port switch
+    } else if (key >= '0' && key <= '9') {
+        //convert the value of the number key to the related number
+        int port_num = key - 48;
+        midi_in.closePort();
+        midi_in.openPort(port_num);
+    }
 }
 
 void ofApp::newMidiMessage(ofxMidiMessage& note) {
