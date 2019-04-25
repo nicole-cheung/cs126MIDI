@@ -29,13 +29,14 @@ void ofApp::draw() {
     ofBackgroundGradient(0, background_color);
     
     if (showing_instructions) {
-        //display text
-        //display if there are no current inputs
+        //display text as white
         ofSetColor(255);
         
         //get and display MIDI inputs
         ofDrawBitmapString("MIDI inputs:", 10, 20);
         std::vector<string> midi_port_strings = midi_in.getInPortList();
+        
+        //for formatting consistency depending on size of list
         int last_line_pos = 44;
         for (int i = 0; i < midi_port_strings.size(); i++) {
             ofDrawBitmapString(ofToString(i) + ": " + midi_port_strings[i], 10, 44 + (10 * i));
