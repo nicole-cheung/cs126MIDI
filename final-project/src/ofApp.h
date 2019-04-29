@@ -2,7 +2,6 @@
 
 #include "ofMain.h"
 #include "ofxMidi.h"
-//#include "ofxThreadedMidiPlayer.h"
 
 class ofApp :
 
