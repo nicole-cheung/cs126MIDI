@@ -21,3 +21,9 @@
 * ofDrawBitmapString creates easily readable instructions
 * Set up key press function to toggle out of instructions
 * Having trouble working with GarageBand as a MIDI output, but the program does currently recognize that an input from Audio Midi Setup exists
+* Added ofxThreadedMidiPlayer to read in MIDI files 
+
+### Week 3
+* Garageband does NOT support MIDI output. Pocket MIDI is an option but currently I can't get it to work.
+* Downloaded iPhone app that can manually send in MIDI messages. To read in files, a combo of Audio MIDI setup and MIDI Player X
+* Messed with pitch and velocity number to see how it affects display

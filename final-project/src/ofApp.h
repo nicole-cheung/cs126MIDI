@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "ofxMidi.h"
+//#include "ofxThreadedMidiPlayer.h"
 
 class ofApp :
 
@@ -16,7 +17,7 @@ public ofxMidiListener {
         int velocity;
     };
     
-    Note notes[kMaxNotes]; //declare constant
+    Note notes[kMaxNotes];
     int background_color;
     ofxMidiIn midi_in;
     bool showing_instructions;
