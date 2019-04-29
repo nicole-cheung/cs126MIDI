@@ -6,6 +6,7 @@ const int kMaxNotes = 1000;
 const int kMidiFormat = 10;
 const int kFormatTab = 4;
 
+//MIDI logic and handling sourced from https://ask.audio/articles/create-your-own-midi-generated-realtime-visuals-with-openframeworks
 void ofApp::setup() {
     ofSetVerticalSync(true);
     ofSetLogLevel(OF_LOG_VERBOSE);

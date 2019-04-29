@@ -27,3 +27,5 @@
 * Garageband does NOT support MIDI output. Pocket MIDI is an option but currently I can't get it to work.
 * Downloaded iPhone app that can manually send in MIDI messages. To read in files, a combo of Audio MIDI setup and MIDI Player X
 * Messed with pitch and velocity number to see how it affects display
+* Working on exporting video this week. Using Homebrew and FFmpeg to take many screencaptures and turn it into a video
+* Found new library ofxSimpleScreenRecorder https://github.com/avseoul/ofxSimpleScreenRecorder/ 
