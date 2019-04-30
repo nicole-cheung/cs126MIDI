@@ -36,6 +36,10 @@
 		A44602282F8E14E00F5ACB33 /* ofxMidiClock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A86E4AED633BD18C0BA30AA7 /* ofxMidiClock.cpp */; };
 		A77FC9935ED0ECABCD49D811 /* jdksmidi_filewritemultitrack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 444F2227AEDA9B27CBC05A3E /* jdksmidi_filewritemultitrack.cpp */; };
 		B01845C5AB8437F9C32F4DEC /* jdksmidi_track.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 095388D6CF73FB8D8555AE0B /* jdksmidi_track.cpp */; };
+		B2AAAB7F2278A2BE004793E4 /* Note.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2AAAB7D2278A2BE004793E4 /* Note.cpp */; };
+		B2AAAB9C2278B3A1004793E4 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2AAAB972278B3A1004793E4 /* ofApp.cpp */; };
+		B2AAAB9D2278B3A1004793E4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2AAAB992278B3A1004793E4 /* main.cpp */; };
+		B2AAAB9E2278B3A1004793E4 /* Note.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2AAAB9A2278B3A1004793E4 /* Note.cpp */; };
 		B8D3B5F129A667AB05A8C7C5 /* ofxMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33C346FE720997A985A1C7E8 /* ofxMidi.cpp */; };
 		C16A75FCB724AAA99A20F231 /* jdksmidi_edittrack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC3BFD9C6B7064E1E71C56FA /* jdksmidi_edittrack.cpp */; };
 		C3BD510A45AAD80B698235DB /* jdksmidi_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4521ADC016350AA70B9300FD /* jdksmidi_parser.cpp */; };
@@ -112,7 +116,6 @@
 		8C5E4A34BFEAA059ED65351D /* fileread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = fileread.h; path = "../../../../addons/ofxThreadedMidiPlayer-master/libs/jdksmidi/include/jdksmidi/fileread.h"; sourceTree = SOURCE_ROOT; };
 		8DB561A6E15513EED6410550 /* ofxMidiMessage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxMidiMessage.h; path = ../../../../addons/ofxMidi/src/ofxMidiMessage.h; sourceTree = SOURCE_ROOT; };
 		8DE2B26892D4DE0434901DB2 /* jdksmidi_filereadmultitrack.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = jdksmidi_filereadmultitrack.cpp; path = "../../../../addons/ofxThreadedMidiPlayer-master/libs/jdksmidi/src/jdksmidi_filereadmultitrack.cpp"; sourceTree = SOURCE_ROOT; };
-		8EB335905B54F883476583E3 /* ofMain.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofMain.h; path = src/ofMain.h; sourceTree = SOURCE_ROOT; };
 		8EC5D44CA7B457C4C7F00097 /* jdksmidi_queue.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = jdksmidi_queue.cpp; path = "../../../../addons/ofxThreadedMidiPlayer-master/libs/jdksmidi/src/jdksmidi_queue.cpp"; sourceTree = SOURCE_ROOT; };
 		91E483970B4DE9E43D683478 /* jdksmidi_matrix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = jdksmidi_matrix.cpp; path = "../../../../addons/ofxThreadedMidiPlayer-master/libs/jdksmidi/src/jdksmidi_matrix.cpp"; sourceTree = SOURCE_ROOT; };
 		9550B280C38071B5CD572866 /* ofxMidiOut.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxMidiOut.cpp; path = ../../../../addons/ofxMidi/src/ofxMidiOut.cpp; sourceTree = SOURCE_ROOT; };
@@ -125,6 +128,19 @@
 		AC3BFD9C6B7064E1E71C56FA /* jdksmidi_edittrack.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = jdksmidi_edittrack.cpp; path = "../../../../addons/ofxThreadedMidiPlayer-master/libs/jdksmidi/src/jdksmidi_edittrack.cpp"; sourceTree = SOURCE_ROOT; };
 		AF39BE5A1BCD972F2C92AA8E /* process.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = process.h; path = "../../../../addons/ofxThreadedMidiPlayer-master/libs/jdksmidi/include/jdksmidi/process.h"; sourceTree = SOURCE_ROOT; };
 		B03AE9B07CFFB98A499FA769 /* ofxMidiConstants.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxMidiConstants.h; path = ../../../../addons/ofxMidi/src/ofxMidiConstants.h; sourceTree = SOURCE_ROOT; };
+		B2AAAB7D2278A2BE004793E4 /* Note.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Note.cpp; sourceTree = "<group>"; };
+		B2AAAB7E2278A2BE004793E4 /* Note.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Note.hpp; sourceTree = "<group>"; };
+		B2AAAB862278B3A1004793E4 /* final-project.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "final-project.xcodeproj"; sourceTree = "<group>"; };
+		B2AAAB8A2278B3A1004793E4 /* final-projectDebug.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = "final-projectDebug.app"; sourceTree = "<group>"; };
+		B2AAAB8C2278B3A1004793E4 /* greensleeves.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = greensleeves.mid; sourceTree = "<group>"; };
+		B2AAAB8D2278B3A1004793E4 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		B2AAAB952278B3A1004793E4 /* ofMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofMain.h; sourceTree = "<group>"; };
+		B2AAAB962278B3A1004793E4 /* Note.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Note.hpp; sourceTree = "<group>"; };
+		B2AAAB972278B3A1004793E4 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		B2AAAB982278B3A1004793E4 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		B2AAAB992278B3A1004793E4 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B2AAAB9A2278B3A1004793E4 /* Note.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Note.cpp; sourceTree = "<group>"; };
+		B2AAABA02278BBBA004793E4 /* DEVELOPMENT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DEVELOPMENT.md; sourceTree = "<group>"; };
 		B31D639DFC10580109C53F54 /* jdksmidi_driverdump.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = jdksmidi_driverdump.cpp; path = "../../../../addons/ofxThreadedMidiPlayer-master/libs/jdksmidi/src/jdksmidi_driverdump.cpp"; sourceTree = SOURCE_ROOT; };
 		B5DB4F89A828953FB8BFF3AA /* ofxRtMidiIn.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxRtMidiIn.h; path = ../../../../addons/ofxMidi/src/desktop/ofxRtMidiIn.h; sourceTree = SOURCE_ROOT; };
 		BD12D1614D62FF0E8C2F07E2 /* ofxRtMidiIn.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxRtMidiIn.cpp; path = ../../../../addons/ofxMidi/src/desktop/ofxRtMidiIn.cpp; sourceTree = SOURCE_ROOT; };
@@ -319,8 +335,6 @@
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
-		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
-		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		EE9C57C2FE66882150262BE3 /* ofxThreadedMidiPlayer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxThreadedMidiPlayer.h; path = "../../../../addons/ofxThreadedMidiPlayer-master/src/ofxThreadedMidiPlayer.h"; sourceTree = SOURCE_ROOT; };
 		F16C9ED3E50884F3097EC5AA /* utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = utils.h; path = "../../../../addons/ofxThreadedMidiPlayer-master/libs/jdksmidi/include/jdksmidi/utils.h"; sourceTree = SOURCE_ROOT; };
 		F330371AFE6F816C6105DED5 /* jdksmidi_showcontrol.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = jdksmidi_showcontrol.cpp; path = "../../../../addons/ofxThreadedMidiPlayer-master/libs/jdksmidi/src/jdksmidi_showcontrol.cpp"; sourceTree = SOURCE_ROOT; };
@@ -530,6 +544,52 @@
 				F740D546B20A2E33AD3387D8 /* world.h */,
 			);
 			name = jdksmidi;
+			sourceTree = "<group>";
+		};
+		B2AAAB832278B3A1004793E4 /* final-project */ = {
+			isa = PBXGroup;
+			children = (
+				B2AAAB862278B3A1004793E4 /* final-project.xcodeproj */,
+				B2AAAB892278B3A1004793E4 /* bin */,
+				B2AAAB942278B3A1004793E4 /* src */,
+			);
+			name = "final-project";
+			sourceTree = "<group>";
+		};
+		B2AAAB872278B3A1004793E4 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2AAAB892278B3A1004793E4 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B2AAAB8A2278B3A1004793E4 /* final-projectDebug.app */,
+				B2AAAB8B2278B3A1004793E4 /* data */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B2AAAB8B2278B3A1004793E4 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B2AAAB8C2278B3A1004793E4 /* greensleeves.mid */,
+				B2AAAB8D2278B3A1004793E4 /* .gitkeep */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B2AAAB942278B3A1004793E4 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B2AAAB952278B3A1004793E4 /* ofMain.h */,
+				B2AAAB962278B3A1004793E4 /* Note.hpp */,
+				B2AAAB972278B3A1004793E4 /* ofApp.cpp */,
+				B2AAAB982278B3A1004793E4 /* ofApp.h */,
+				B2AAAB992278B3A1004793E4 /* main.cpp */,
+				B2AAAB9A2278B3A1004793E4 /* Note.cpp */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		BB4B014C10F69532006C3DED /* addons */ = {
@@ -826,8 +886,8 @@
 		E4B69B4A0A3A1720003C02F2 = {
 			isa = PBXGroup;
 			children = (
-				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
-				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				B2AAABA02278BBBA004793E4 /* DEVELOPMENT.md */,
+				B2AAAB832278B3A1004793E4 /* final-project */,
 				E4B69E1C0A3A1BDC003C02F2 /* src */,
 				E42962AA2163EDD300A6A9E2 /* openFrameworks */,
 				BB4B014C10F69532006C3DED /* addons */,
@@ -842,7 +902,8 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
-				8EB335905B54F883476583E3 /* ofMain.h */,
+				B2AAAB7D2278A2BE004793E4 /* Note.cpp */,
+				B2AAAB7E2278A2BE004793E4 /* Note.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -907,6 +968,12 @@
 			mainGroup = E4B69B4A0A3A1720003C02F2;
 			productRefGroup = E4B69B4A0A3A1720003C02F2;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B2AAAB872278B3A1004793E4 /* Products */;
+					ProjectRef = B2AAAB862278B3A1004793E4 /* final-project.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E4B69B5A0A3A1756003C02F2 /* final-project */,
@@ -971,10 +1038,13 @@
 				A44602282F8E14E00F5ACB33 /* ofxMidiClock.cpp in Sources */,
 				D913450AFBBF929C187354AA /* ofxMidiIn.cpp in Sources */,
 				56E45B8005D45384DE6FA6A6 /* ofxMidiMessage.cpp in Sources */,
+				B2AAAB7F2278A2BE004793E4 /* Note.cpp in Sources */,
 				6A1996B555C4CE6005DE14F0 /* ofxMidiOut.cpp in Sources */,
 				75B2F2770567DF9541041D38 /* ofxMidiTimecode.cpp in Sources */,
 				EFCD151748C9BCBF8BC77480 /* jdksmidi_advancedsequencer.cpp in Sources */,
 				8A516766214758CC2D0164D7 /* jdksmidi_driver.cpp in Sources */,
+				B2AAAB9E2278B3A1004793E4 /* Note.cpp in Sources */,
+				B2AAAB9C2278B3A1004793E4 /* ofApp.cpp in Sources */,
 				03CFE7B564B0B4B41277E180 /* jdksmidi_driverdump.cpp in Sources */,
 				C16A75FCB724AAA99A20F231 /* jdksmidi_edittrack.cpp in Sources */,
 				82C575D1E2C3E7AB9790A580 /* jdksmidi_file.cpp in Sources */,
@@ -988,6 +1058,7 @@
 				A429ED6CE50B92C1F2D522E7 /* jdksmidi_matrix.cpp in Sources */,
 				6E8C4628F8CB1BB95D5585B6 /* jdksmidi_midi.cpp in Sources */,
 				71800F02764787575C21A173 /* jdksmidi_msg.cpp in Sources */,
+				B2AAAB9D2278B3A1004793E4 /* main.cpp in Sources */,
 				4B844B87E55759D5C83116DA /* jdksmidi_multitrack.cpp in Sources */,
 				C3BD510A45AAD80B698235DB /* jdksmidi_parser.cpp in Sources */,
 				134E598687E8EEF1DC5EA926 /* jdksmidi_process.cpp in Sources */,
@@ -1011,7 +1082,6 @@
 /* Begin XCBuildConfiguration section */
 		99FA3DBB1C7456C400CFA0EE /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
 				COPY_PHASE_STRIP = YES;
@@ -1061,7 +1131,6 @@
 		};
 		99FA3DBC1C7456C400CFA0EE /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
@@ -1110,7 +1179,6 @@
 		};
 		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
 				COPY_PHASE_STRIP = NO;
@@ -1159,7 +1227,6 @@
 		};
 		E4B69B4F0A3A1720003C02F2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
 				COPY_PHASE_STRIP = YES;
@@ -1208,7 +1275,6 @@
 		};
 		E4B69B600A3A1757003C02F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
@@ -1256,7 +1322,6 @@
 		};
 		E4B69B610A3A1757003C02F2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;

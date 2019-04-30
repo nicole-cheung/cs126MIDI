@@ -1,7 +1,7 @@
 #pragma once
 
-#include "ofMain.h"
 #include "ofxMidi.h"
+#include "Note.hpp"
 
 class ofApp :
 
@@ -9,15 +9,9 @@ public ofBaseApp,
 public ofxMidiListener {
     const static int kMaxNotes = 1000;
     
-    struct Note {
-        ofPoint pos;
-        int time_counter = 0;
-        int pitch;
-        int velocity;
-    };
-    
     Note notes[kMaxNotes];
     int background_color;
+    //a MIDI input that reads data from the port
     ofxMidiIn midi_in;
     bool showing_instructions;
 
@@ -25,8 +19,8 @@ public ofxMidiListener {
     
         void setup();
         void draw();
-
         void keyPressed(int key);
         void newMidiMessage(ofxMidiMessage& event);
+        void displayInstructions(int line);
     
 };
