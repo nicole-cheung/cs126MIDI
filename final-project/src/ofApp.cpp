@@ -19,6 +19,7 @@ void ofApp::setup() {
     midi_in.openPort(0);
     midi_in.addListener(this);
     
+    //TODO: if needed, this is where to initialize an output.
     for (int i = 0; i < kMaxNotes; i++) {
         notes[i].time_counter = 0;
     }
@@ -62,6 +63,7 @@ void ofApp::draw() {
             ofDrawCircle(notes[i].pos, notes[i].velocity * smooth);
             
             notes[i].time_counter--;
+            
         }
     }
 }
@@ -92,8 +94,10 @@ void ofApp::newMidiMessage(ofxMidiMessage& note) {
             }
         }
     }
+    midi_out.sendNoteOn(1, note.pitch,  note.velocity);
 }
 
+//To be honest, I don't know how the kMidiFormat 
 void ofApp::displayInstructions(int line) {
     ofDrawBitmapString("Currently connected to MIDI input:", kMidiFormat, line + kMidiFormat * kFormatTab);
     

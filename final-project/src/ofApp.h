@@ -13,6 +13,7 @@ public ofxMidiListener {
     int background_color;
     //a MIDI input that reads data from the port
     ofxMidiIn midi_in;
+    ofxMidiOut midi_out;
     bool showing_instructions;
 
     public:

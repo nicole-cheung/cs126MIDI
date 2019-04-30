@@ -7,7 +7,6 @@
 
 #include "Note.hpp"
 
-
 //Sets the timer to the top, randomizes the position in which the note graphic will appear, and sets the pitch/velocity
 void Note::initializeNote(ofxMidiMessage& note) {
     this->pos.set(ofRandom(ofGetWidth()), ofRandom(ofGetHeight()));

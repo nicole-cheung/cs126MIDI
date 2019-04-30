@@ -1,3 +1,2 @@
 ofxMidi
-ofxSimpleScreenRecorder-master
 ofxThreadedMidiPlayer-master

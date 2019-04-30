@@ -8,8 +8,8 @@
 #ifndef Note_hpp
 #define Note_hpp
 
-#include "ofMain.h"
 #include "ofxMidi.h"
+#include "ofMain.h"
 #include <stdio.h>
 
 struct Note {
