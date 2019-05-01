@@ -128,6 +128,7 @@
 		AF39BE5A1BCD972F2C92AA8E /* process.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = process.h; path = "../../../../addons/ofxThreadedMidiPlayer-master/libs/jdksmidi/include/jdksmidi/process.h"; sourceTree = SOURCE_ROOT; };
 		B03AE9B07CFFB98A499FA769 /* ofxMidiConstants.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxMidiConstants.h; path = ../../../../addons/ofxMidi/src/ofxMidiConstants.h; sourceTree = SOURCE_ROOT; };
 		B216D28322790B3800089643 /* DEVELOPMENT.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = DEVELOPMENT.md; sourceTree = "<group>"; };
+		B2DFA0DD227966E5006D476B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		B31D639DFC10580109C53F54 /* jdksmidi_driverdump.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = jdksmidi_driverdump.cpp; path = "../../../../addons/ofxThreadedMidiPlayer-master/libs/jdksmidi/src/jdksmidi_driverdump.cpp"; sourceTree = SOURCE_ROOT; };
 		B5DB4F89A828953FB8BFF3AA /* ofxRtMidiIn.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxRtMidiIn.h; path = ../../../../addons/ofxMidi/src/desktop/ofxRtMidiIn.h; sourceTree = SOURCE_ROOT; };
 		BD12D1614D62FF0E8C2F07E2 /* ofxRtMidiIn.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxRtMidiIn.cpp; path = ../../../../addons/ofxMidi/src/desktop/ofxRtMidiIn.cpp; sourceTree = SOURCE_ROOT; };
@@ -845,6 +846,7 @@
 			children = (
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				B2DFA0DD227966E5006D476B /* README.md */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 				716AA7364D994A42CB72AD14 /* Note.hpp */,
 				AAEBEE8C9E9BAF5CA01885E3 /* Note.cpp */,
