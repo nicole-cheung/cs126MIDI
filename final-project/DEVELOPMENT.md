@@ -29,7 +29,7 @@
 * Messed with pitch and velocity number to see how it affects display
 * Working on exporting video this week. Using Homebrew and FFmpeg to take many screencaptures and turn it into a video
 * Found new library ofxSimpleScreenRecorder https://github.com/avseoul/ofxSimpleScreenRecorder/ 
-* I considered adding audio output to the app. After consideration, I realized that most MIDI machines create their own audio and if the program did as well, it would be distracting/annoying to work with.
+* I considered adding audio output to the app. After consideration, I realized that most MIDI machines create their own audio and if the program did as well, it would be distracting/annoying to work with. In this case, Garageband is the MIDI audio out since I don't have a real keyboard.
 * The linear path graphic is pretty useless - it already exists in Garageband or most other MIDI players.
 * Found problem with md files not committing WAY TOO LATE how do i fix this
 * Code clean up - decomposing, getting rid of old code/comments, magic number fixes
