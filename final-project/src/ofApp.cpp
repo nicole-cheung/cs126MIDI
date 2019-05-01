@@ -6,14 +6,19 @@ const int kMaxNotes = 1000;
 const int kMidiFormat = 10;
 const int kFormatTab = 4;
 
+const int kWhite = 255;
+const int kKeyConversion = 48;
+const int kFps = 60;
+
 //MIDI logic and handling sourced from https://ask.audio/articles/create-your-own-midi-generated-realtime-visuals-with-openframeworks
 void ofApp::setup() {
     ofSetVerticalSync(true);
     ofSetLogLevel(OF_LOG_VERBOSE);
-    ofSetFrameRate(60);
+    ofSetFrameRate(kFps);
     
     background_color = 0;
     showing_instructions = true;
+    ofSetCircleResolution(50);
     
     //opens a port to listen for MIDI data (AKA USB input or a virtual bus)
     midi_in.openPort(0);
@@ -27,15 +32,13 @@ void ofApp::setup() {
 
 void ofApp::draw() {
     ofBackgroundGradient(0, background_color);
-    
     if (showing_instructions) {
         //display text as white
-        ofSetColor(255);
-        
+        ofSetColor(kWhite);
         std::vector<string> midi_ports = midi_in.getInPortList();
         
         //for formatting consistency depending on size of list
-        int last_line = 44;
+        int last_line = kMidiFormat * kFormatTab + kFormatTab;
         for (int i = 0; i < midi_ports.size(); i++) {
             last_line += (kMidiFormat * i);
         }
@@ -46,14 +49,14 @@ void ofApp::draw() {
     //Displays note graphics
     for (int i = 0; i < kMaxNotes; i++) {
         if (notes[i].time_counter > 0) {
-            
             //Sets the visual elements of the circle
             //newer notes will be more opaque to catch the eye
             int transparency = notes[i].time_counter;
+            
             //TODO: fiddle with color value in case int converstion is ugly
             //right now the color scheme is mostly blue and purple
             int color = notes[i].pitch * 2;
-            ofSetColor(255 - color, color + kMidiFormat * kMidiFormat,
+            ofSetColor(kWhite - color, color + kMidiFormat * kMidiFormat,
                        color * kFormatTab, transparency);
         
             //draws the circle at the randomly generated position
@@ -61,7 +64,7 @@ void ofApp::draw() {
             //TODO: fiddle with value of velocity to get smooth images
             double smooth = .8;
             ofDrawCircle(notes[i].pos, notes[i].velocity * smooth);
-            
+
             notes[i].time_counter--;
             
         }
@@ -72,11 +75,10 @@ void ofApp::keyPressed(int key) {
     //toggle instructions
     if (key == 'i') {
         showing_instructions = !showing_instructions;
-        
         //toggles port switch in the case of multiple inputs being sent in.
     } else if (key >= '0' && key <= '9') {
         //convert the value of the number key to the related number
-        int port_num = key - 48;
+        int port_num = key - kKeyConversion;
         midi_in.closePort();
         midi_in.openPort(port_num);
     }
@@ -94,10 +96,14 @@ void ofApp::newMidiMessage(ofxMidiMessage& note) {
             }
         }
     }
+    //This means the MIDI message is not a note but a CC message (mod wheel)
+    //Real life examples include footswitch, expression pedal, slider, or other controller that isn't a music note
+    if (note.status == MIDI_CONTROL_CHANGE && note.control == 1) {
+        background_color = note.value;
+    }
     midi_out.sendNoteOn(1, note.pitch,  note.velocity);
 }
 
-//To be honest, I don't know how the kMidiFormat 
 void ofApp::displayInstructions(int line) {
     ofDrawBitmapString("Currently connected to MIDI input:", kMidiFormat, line + kMidiFormat * kFormatTab);
     

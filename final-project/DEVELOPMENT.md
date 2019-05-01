@@ -32,3 +32,5 @@
 * I considered adding audio output to the app. After consideration, I realized that most MIDI machines create their own audio and if the program did as well, it would be distracting/annoying to work with.
 * The linear path graphic is pretty useless - it already exists in Garageband or most other MIDI players.
 * Found problem with md files not committing WAY TOO LATE how do i fix this
+* Code clean up - decomposing, getting rid of old code/comments, magic number fixes
+* Things I would do if given more time: Give an option to toggle MIDI sound playback. This is more complicated than I originally thought because MIDI files are not sound files, but more like streams of note data which I would have to study more to convert to their correct pitches.
